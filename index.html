@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>617 Smoke Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MICRO SERVICES</h1>
+        <h2>617 Smoke Shop</h2>
+        <div id="locationButtons">
+            <button onclick="showForm('79')">79 Bow St</button>
+            <button onclick="showForm('533')">533 Medford St</button>
+        </div>
+        <div id="recommendationForm" style="display:none;">
+            <h3>Recommend a Product</h3>
+            <form id="productForm">
+                <input type="hidden" id="locationId" name="locationId">
+                <input type="text" id="productName" name="productName" placeholder="Product Name" required>
+                <textarea id="productDescription" name="productDescription" placeholder="Product Description" required></textarea>
+                <button type="submit">Submit Recommendation</button>
+            </form>
+        </div>
+        <div id="thankYouMessage" style="display:none;">
+            <h3>Thank you for your recommendation!</h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
