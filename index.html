@@ -17,7 +17,12 @@
             <button onclick="selectLocation('533')">533 Medford St</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function selectLocation(location) {
+            localStorage.setItem('selectedLocation', location);
+            window.location.href = 'rating.html';
+        }
+    </script>
 </body>
 
 </html>
