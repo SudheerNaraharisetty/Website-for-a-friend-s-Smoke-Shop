@@ -37,6 +37,7 @@ button {
 .star {
     cursor: pointer;
     color: #00ff00;
+    animation: starPulse 2s infinite;
 }
 
 p {
@@ -57,6 +58,38 @@ p {
 
     50% {
         transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-title {
+    animation: fadeIn 1s ease-in;
+}
+
+.animated-location {
+    animation: fadeIn 1s ease-in 0.5s both;
+}
+
+@keyframes starPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
     }
 
     100% {

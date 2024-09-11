@@ -11,8 +11,8 @@
 
 <body>
     <div class="container">
-        <h1>Rate 617 Smoke Shop</h1>
-        <p>Location: <span id="selectedLocation"></span></p>
+        <h1 class="animated-title">Rate 617 Smoke Shop</h1>
+        <p class="animated-location">Location: <span id="selectedLocation"></span></p>
         <div id="ratingStars">
             <span class="star" onclick="rate(1)">☆</span>
             <span class="star" onclick="rate(2)">☆</span>
@@ -23,8 +23,8 @@
         <div id="productRecommendation">
             <h3>Recommend a Product</h3>
             <form id="recommendationForm">
-                <input type="text" id="productName" placeholder="Product Name" required>
-                <input type="url" id="productLink" placeholder="Product Link" required>
+                <input type="text" id="productName" placeholder="Product Name">
+                <input type="url" id="productLink" placeholder="Product Link">
                 <input type="file" id="productImage" accept="image/*">
                 <button type="submit">Submit Recommendation</button>
             </form>
