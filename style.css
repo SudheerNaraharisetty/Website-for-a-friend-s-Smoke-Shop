@@ -11,21 +11,19 @@ body {
 
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
-    background-color: #00ff00;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
+.logo-container {
+    margin-bottom: 50px;
+    /* Adds space between logo and buttons */
 }
 
 .animated-logo {
-    width: 200px;
+    width: 300px;
+    /* Increased size */
     height: auto;
     animation: pulse 2s infinite;
 }
@@ -42,4 +40,23 @@ button {
     100% {
         transform: scale(1);
     }
+}
+
+button {
+    background-color: #00ff00;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    /* Increased button size */
+    margin: 15px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    /* Increased font size */
+}
+
+#locationButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
