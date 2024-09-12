@@ -53,6 +53,20 @@ function rate(stars) {
 // For rating.html
 document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('selectedLocation')) {
-        document.getElementById('selectedLocation').textContent = localStorage.getItem('selectedLocation');
+        const location = localStorage.getItem('selectedLocation');
+        document.getElementById('selectedLocation').textContent = location === '79' ? '79 Bow St' : '533 Medford St';
+    }
+
+    if (document.getElementById('recommendationForm')) {
+        document.getElementById('recommendationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server or Google Sheets
+            // For now, we'll just log it to the console
+            console.log('Product Name:', document.getElementById('productName').value);
+            console.log('Product Link:', document.getElementById('productLink').value);
+            console.log('Product Image:', document.getElementById('productImage').files[0]);
+            alert('Thank you for your recommendation!');
+            this.reset();
+        });
     }
 });
