@@ -66,12 +66,38 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('recommendationForm')) {
         document.getElementById('recommendationForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            // Here you would typically send the form data to your server or Google Sheets
-            console.log('Product Name:', document.getElementById('productName').value);
-            console.log('Product Link:', document.getElementById('productLink').value);
-            console.log('Product Image:', document.getElementById('productImage').files[0]);
-            alert('Thank you for your recommendation!');
-            this.reset();
+            const formData = new FormData(this);
+            const location = localStorage.getItem('selectedLocation');
+
+            // Convert form data to JSON
+            const jsonData = {
+                location: location,
+                productName: formData.get('productName'),
+                productLink: formData.get('productLink'),
+                imageUrl: '' // We'll handle image upload separately if needed
+            };
+
+            // Send data to Google Apps Script
+            fetch('https://script.google.com/macros/s/AKfycbxEkfun8phf2N9_G8GSCm1twneNMAF6JerSqBaadLS2m4ZY2BjKxboMWF4PtbrYBT22/exec', {
+                method: 'POST',
+                body: JSON.stringify(jsonData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        alert('Thank you for your recommendation!');
+                        this.reset();
+                    } else {
+                        alert('There was an error submitting your recommendation. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error submitting your recommendation. Please try again.');
+                });
         });
     }
 });
