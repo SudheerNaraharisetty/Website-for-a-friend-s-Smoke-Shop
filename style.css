@@ -62,6 +62,9 @@ button:hover {
 #ratingStars {
     font-size: 48px;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .star {
@@ -104,5 +107,9 @@ button:hover {
 
     #ratingStars {
         font-size: 36px;
+    }
+
+    .star {
+        padding: 0 5px;
     }
 }

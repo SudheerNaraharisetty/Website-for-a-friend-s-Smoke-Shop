@@ -43,9 +43,9 @@ function rate(stars) {
         }
     } else {
         if (location === '79') {
-            window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJAeqXIvR344kRBvBHr6UKfg8';
+            window.location.href = 'https://www.google.com/search?sca_esv=6cf9c2b9fed3aa1b&rlz=1C1UEAD_enIN1045IN1045&sxsrf=ADLYWIJ5z0YfHvVKH392W3E8IqgoXTMX_Q:1726154075516&q=617+Smoke+Shop&ludocid=1116541599902629638&lsig=AB86z5Xd41nawFczxXGM9G0SguG8&sa=X&ved=2ahUKEwiirf6D2b2IAxXkFlkFHXkcD4YQoAJ6BAgYEAc&biw=1280&bih=567&dpr=1.5#lrd=0x89e377f42a17ea01:0xf7ec0ab5f247f06,3,,,,';
         } else {
-            window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJveiTNtN344kRX_dOL4UGfbs';
+            window.location.href = 'https://www.google.com/search?sca_esv=6cf9c2b9fed3aa1b&rlz=1C1UEAD_enIN1045IN1045&sxsrf=ADLYWILrDhYsJvGLZOLppuAoikPLcmRt6Q:1726154181408&q=617+Smoke+Shop&ludocid=13245234410688935775&lsig=AB86z5Vhk8eYrq0kTKx2RaH35pL6&sa=X&ved=2ahUKEwifyL222b2IAxXTEFkFHR53AAgQoAJ6BAgYEAc&biw=1280&bih=567&dpr=1.5#lrd=0x89e377d3693ae8bd:0xb7d086852fe4f75f,3,,,,';
         }
     }
 }
