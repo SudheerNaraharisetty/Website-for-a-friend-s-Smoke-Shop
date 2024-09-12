@@ -43,25 +43,30 @@ function rate(stars) {
         }
     } else {
         if (location === '79') {
-            window.location.href = 'https://www.google.com/search?q=617+Smoke+Shop&ludocid=1116541599902629638#lrd=0x89e377f42a17ea01:0xf7ec0ab5f247f06,3,,,,';
+            window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJAeqXIvR344kRBvBHr6UKfg8';
         } else {
-            window.location.href = 'https://www.google.com/search?q=617+Smoke+Shop&ludocid=13245234410688935775#lrd=0x89e377d3693ae8bd:0xb7d086852fe4f75f,3,,,,';
+            window.location.href = 'https://search.google.com/local/writereview?placeid=ChIJveiTNtN344kRX_dOL4UGfbs';
         }
     }
 }
 
 // For rating.html
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.getElementById('selectedLocation')) {
-        const location = localStorage.getItem('selectedLocation');
-        document.getElementById('selectedLocation').textContent = location === '79' ? '79 Bow St' : '533 Medford St';
+    const location = localStorage.getItem('selectedLocation');
+    const storeLocationElement = document.getElementById('storeLocation');
+
+    if (storeLocationElement) {
+        if (location === '79') {
+            storeLocationElement.textContent = '79 Bow St, Somerville, MA 02143';
+        } else {
+            storeLocationElement.textContent = '533 Medford St, Somerville, MA 02145';
+        }
     }
 
     if (document.getElementById('recommendationForm')) {
         document.getElementById('recommendationForm').addEventListener('submit', function (e) {
             e.preventDefault();
             // Here you would typically send the form data to your server or Google Sheets
-            // For now, we'll just log it to the console
             console.log('Product Name:', document.getElementById('productName').value);
             console.log('Product Link:', document.getElementById('productLink').value);
             console.log('Product Image:', document.getElementById('productImage').files[0]);

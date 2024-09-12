@@ -5,12 +5,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 .animated-title {
@@ -35,6 +39,7 @@ body {
 #locationButtons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
@@ -43,13 +48,17 @@ button {
     color: #000000;
     border: none;
     padding: 15px 30px;
-    margin: 0 15px;
+    margin: 10px;
     cursor: pointer;
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
-/* Rating page styles */
+button:hover {
+    transform: scale(1.05);
+}
+
 #ratingStars {
     font-size: 48px;
     margin: 20px 0;
@@ -58,6 +67,11 @@ button {
 .star {
     cursor: pointer;
     padding: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.star:hover {
+    transform: scale(1.2);
 }
 
 #productRecommendation {
@@ -69,6 +83,26 @@ button {
     display: block;
     margin: 10px auto;
     padding: 10px;
-    width: 80%;
+    width: 100%;
     max-width: 300px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#recommendationForm input[type="file"] {
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .animated-title {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #ratingStars {
+        font-size: 36px;
+    }
 }
