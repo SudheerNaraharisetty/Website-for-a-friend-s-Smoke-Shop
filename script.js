@@ -69,16 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(this);
             const location = localStorage.getItem('selectedLocation');
 
-            // Convert form data to JSON
             const jsonData = {
                 location: location,
                 productName: formData.get('productName'),
                 productLink: formData.get('productLink'),
-                imageUrl: '' // We'll handle image upload separately if needed
+                imageUrl: formData.get('productImage') ? URL.createObjectURL(formData.get('productImage')) : ''
             };
 
-            // Send data to Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbxEkfun8phf2N9_G8GSCm1twneNMAF6JerSqBaadLS2m4ZY2BjKxboMWF4PtbrYBT22/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxj6AjAf2EqH-l5IAAKfe13lBxyXO2vDMy4pyIGgzvSmWTxI0zStf93BhgvYxYK9JEc/exec', {
                 method: 'POST',
                 body: JSON.stringify(jsonData),
                 headers: {
