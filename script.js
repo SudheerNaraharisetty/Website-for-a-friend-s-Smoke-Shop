@@ -43,9 +43,9 @@ function rate(stars) {
         }
     } else {
         if (location === '79') {
-            window.location.href = 'https://www.google.com/search?sca_esv=6cf9c2b9fed3aa1b&rlz=1C1UEAD_enIN1045IN1045&sxsrf=ADLYWIJ5z0YfHvVKH392W3E8IqgoXTMX_Q:1726154075516&q=617+Smoke+Shop&ludocid=1116541599902629638&lsig=AB86z5Xd41nawFczxXGM9G0SguG8&sa=X&ved=2ahUKEwiirf6D2b2IAxXkFlkFHXkcD4YQoAJ6BAgYEAc&biw=1280&bih=567&dpr=1.5#lrd=0x89e377f42a17ea01:0xf7ec0ab5f247f06,3,,,,';
+            window.location.href = 'https://www.google.com/search?q=617+Smoke+Shop&oq=617&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGD0yBggCEEUYOzIGCAMQRRg5MgYIBBBFGD3SAQc4OThqMGo5qAIBsAIB&client=ms-android-samsung-rvo1&sourceid=chrome-mobile&ie=UTF-8#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:1116541599902629638,ru_gwp:0%252C7,ru_lqi:Cg42MTcgU21va2UgU2hvcEjv-o2-mLqAgAhaJhAAEAEQAhgAGAEYAiIONjE3IHNtb2tlIHNob3AqCAgCEAAQARACkgEMdG9iYWNjb19zaG9wqgE3EAEyHxABIhuTmT4G5sLfwNGEePd4NC0vA0QV3i6ogHsHpuwyEhACIg42MTcgc21va2Ugc2hvcOABAA,ru_phdesc:gssK7lOa2fw,trex_id:Xv0rId';
         } else {
-            window.location.href = 'https://www.google.com/search?sca_esv=6cf9c2b9fed3aa1b&rlz=1C1UEAD_enIN1045IN1045&sxsrf=ADLYWILrDhYsJvGLZOLppuAoikPLcmRt6Q:1726154181408&q=617+Smoke+Shop&ludocid=13245234410688935775&lsig=AB86z5Vhk8eYrq0kTKx2RaH35pL6&sa=X&ved=2ahUKEwifyL222b2IAxXTEFkFHR53AAgQoAJ6BAgYEAc&biw=1280&bih=567&dpr=1.5#lrd=0x89e377d3693ae8bd:0xb7d086852fe4f75f,3,,,,';
+            window.location.href = 'https://www.google.com/search?q=617+Smoke+Shop&oq=617&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGD0yBggCEEUYOzIGCAMQRRg5MgYIBBBFGD3SAQc4MzlqMGo5qAIAsAIB&client=ms-android-samsung-rvo1&sourceid=chrome-mobile&ie=UTF-8#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D&trex=m_t:lcl_akp,rc_f:rln,rc_ludocids:13245234410688935775,ru_gwp:0%252C7,ru_lqi:Cg42MTcgU21va2UgU2hvcEi-mbC6trWAgAhaJhAAEAEQAhgAGAEYAiIONjE3IHNtb2tlIHNob3AqCAgCEAAQARACkgEMdG9iYWNjb19zaG9wqgE3EAEyHxABIhuTmT4G5sLfwNGEePd4NC0vA0QV3i6ogHsHpuwyEhACIg42MTcgc21va2Ugc2hvcOABAA,ru_phdesc:Q2W2RHF7j1Q,trex_id:aLmUAf';
         }
     }
 }
